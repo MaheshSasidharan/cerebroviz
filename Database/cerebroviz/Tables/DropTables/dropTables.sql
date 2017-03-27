@@ -1,0 +1,4 @@
+DROP TABLE IF EXISTS `ResponseTexts`;
+DROP TABLE IF EXISTS `Users`;
+DROP TABLE IF EXISTS `Questions`;
+DROP TABLE IF EXISTS `Assessments`;
