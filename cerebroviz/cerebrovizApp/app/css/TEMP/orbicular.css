@@ -1,0 +1,79 @@
+div.co-circle-progress {
+  position: relative;
+  width: 100%;
+  height: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #EEE;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em; }
+  div.co-circle-progress *, div.co-circle-progress *:after, div.co-circle-progress *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  div.co-circle-progress > div.co-circle, div.co-circle-progress div.co-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background: transparent;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-transition: -webkit-transform 40s linear;
+    -moz-transition: -moz-transform 40s linear;
+    -ms-transition: -ms-transform 40s linear;
+    -o-transition: -o-transform 40s linear;
+    transition: -webkit-transform 40s linear;
+    transition: transform 40s linear; }
+  div.co-circle-progress > div.co-circle {
+    clip: rect(0px, 1em, 1em, 0.5em); }
+    div.co-circle-progress > div.co-circle > div.co-fill {
+      clip: rect(0em, 0.5em, 1em, 0em);
+      background-color: #50a6d3; }
+  div.co-circle-progress > div.co-shadow {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2) inset;
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background: transparent;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em; }
+  div.co-circle-progress > div.co-content {
+    position: absolute;
+    overflow: hidden;
+    height: 0.84em;
+    width: 0.84em;
+    margin-left: 0.08em;
+    margin-top: 0.08em;
+    background-color: #2b383f;
+    border-radius: 0.42em;
+    -webkit-border-radius: 0.42em;
+    -moz-border-radius: 0.42em;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2); }
+    div.co-circle-progress > div.co-content > div {
+      position: relative;
+      display: table;
+      width: 100%;
+      height: 100%; }
+      div.co-circle-progress > div.co-content > div > div {
+        display: table-row;
+        width: 100%;
+        height: 100%; }
+        div.co-circle-progress > div.co-content > div > div > div {
+          display: table-cell;
+          font-size: 0.08em;
+          color: #FFF;
+          line-height: 1em;
+          text-align: center;
+          vertical-align: middle;
+          width: 100%; }
+
+orbicular div.co-content > div > div > div, [orbicular] div.co-content > div > div > div {
+  font-weight: bold; }
+
+/*# sourceMappingURL=orbicular.css.map */

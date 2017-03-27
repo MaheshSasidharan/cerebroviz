@@ -1,0 +1,43 @@
+.GMD_navbar {
+    background-color: #0288D1;
+}
+
+.GMD_navbar .navbar-brand,
+.GMD_navbar .nav a {
+    color: white !important;
+}
+
+.GMD_navbar .nav .active a {
+    background-color: #01579B !important;
+}
+
+.GMD_navbar .nav a:hover {
+    background-color: #039BE5 !important;
+}
+
+.GMD_body {
+    background-color: #E1F5FE;
+}
+
+.GMD_container .SC_assessmentContainer {
+    background-color: #B3E5FC;
+}
+
+.GMD_container .SC_assessmentContainer dl{
+    background-color: #3aa7d8;
+    color: white;
+}
+
+.GMD_container .SC_assessmentContainer .SC_tabHeaderContainer a {
+    background-color: #4FC3F7 !important;
+    color: white !important;
+}
+
+
+/*.GMD_nav-link {
+    background-color: #4FC3F7 !important;
+}*/
+
+.GMD_innercontainer {
+    padding: 24px;
+}

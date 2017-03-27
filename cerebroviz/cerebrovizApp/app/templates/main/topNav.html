@@ -1,0 +1,25 @@
+<!-- Top bar Navigation-->
+<nav class="GMD_navbar navbar navbar-default" ng-controller="NavCtrl as vm">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CEREBROVIZ</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ng-class="vm.Helper.UpdateTabActive('Home')"><a href="#" ng-click>Home</a></li>
+        <li ng-class="vm.Helper.UpdateTabActive('About')"><a href="#about">About</a></li>
+        <li ng-class="vm.Helper.UpdateTabActive('Contact')"><a href="#contact">Contact</a></li>
+<!--         <li ng-class="vm.Helper.UpdateTabActive('Assessments')"><a href="#assessments">Assessments</a></li> -->
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

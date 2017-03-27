@@ -1,0 +1,22 @@
+@import "../bower_components/orbicular/_orbicular.scss";
+
+@include orbicular(
+    $barColor:  #50a6d3,    // The completed progress color
+    $barBg:     #EEE,       // The remaining progress color
+    $barWidth:  8,          // The bar width is defined as a percentage of the width of the circle
+    $contentBg: #2b383f,    // The circle center
+    $fontSize:  8,          // Content font-size as a percentage of the circle size
+    $fontColor: #FFF,       // Content text color
+    $transTime: 40s,       // Time to animate the movement
+    $transFunc: linear,     // transition timing
+    $shadow: 6px 6px 10px rgba(0,0,0,0.2)  // optional shadow (not default)
+);
+
+// for further customizations to the circle content use:
+// You can add your own id's and classes to the element too
+orbicular, [orbicular] {
+    div.co-content > div > div > div {
+        font-weight: bold;
+        // and any other divs' etc.
+    }
+}

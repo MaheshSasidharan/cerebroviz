@@ -1,0 +1,172 @@
+/* Common */
+.SC_assessmentContainer {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.SC_assessmentContainer .pager {
+    margin: 2px 0px 40px 0px;
+}
+
+.SC_tabHeaderContainer > a {
+    background-color: rgba(100, 200, 200, 1) !important;
+}
+
+.main dl {
+    background-color: lightgray;
+    border-radius: 2px;
+}
+
+.main dd .form-control,
+.main dd .input-group-btn button {
+    border-radius: 0px;
+}
+
+.main dl dt {
+    margin: 5px 0px 0px 0px;
+    padding: 0px 10px;
+}
+
+.SC_Asmnt2_Letter {
+    text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+}
+
+.SC_audioContainer {
+    padding: 1px 20px;
+    text-align: center;    
+}
+
+.SC_assessmentInnerContainer {
+    padding: 20px
+}
+
+.SC_PracticeLabel {
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    text-shadow: 0px 0px 2px #8dc0ec;
+}
+/* End of common */
+
+
+/* Time Duration */
+
+.progress-bar {
+    -webkit-transition: width linear;
+    -moz-transition: width linear;
+    -ms-transition: width linear;
+    -o-transition: width linear;
+    transition: width linear;
+}
+
+.progress-bar {
+    -webkit-transition-duration: 1000ms !important;
+    -moz-transition-duration: 1000ms !important;
+    -ms-transition-duration: 1000ms !important;
+    -o-transition-duration: 1000ms !important;
+    transition-duration: 1000ms;
+    width: 0%;
+}
+
+
+/*Round Button hover effects*/
+
+
+/*Glass effect button*/
+
+.glass {
+    background: orange;
+    background: linear-gradient(orange, red);
+    padding: 8px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.glass:after {
+    content: "";
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 0px);
+    height: 50%;
+    border-radius: 2px 2px 0px 0px;
+}
+
+
+/*End of glass*/
+
+.SC_TimeDuration .SC_ButtonPress {
+    /* To position at the center */
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.SC_ButtonPress {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    transition: all linear 100ms;
+}
+
+.SC_ButtonPress.buttonPressed {
+    background: linear-gradient(orange, orange);
+}
+
+.SC_ButtonPress.buttonPressed {
+    height: 195px;
+    width: 195px;
+    margin-top: 5px;
+}
+
+.SC_ButtonPress.glass:after {
+    height: 100%;
+    box-shadow: inset -20px -20px 96px orange;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: all linear 100ms;
+}
+
+.SC_ButtonPress.glass.buttonPressed:after {
+    box-shadow: inset -15px -5px 96px orange;
+}
+
+.SC_ButtonPress.disabledButton,
+.SC_ButtonPress.disabledButton:after {
+    background: #efeff7;
+    box-shadow: inset -20px -20px 96px lightblue;
+}
+
+#assess_circle {
+    width: 210px;
+    margin: 0 auto;
+}
+
+
+/* End TD*/
+
+
+/* Picture Prompt */
+
+.SC_PcturePrompt .ImageSetContainer {
+    display: inline-block;
+}
+
+.SC_PicturePrompt_ImgContainer {
+    width: 400px;
+    height: 400px;
+}
+
+.SC_PicturePromptImage {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+/* End of prompt*/

@@ -1,0 +1,67 @@
+/* app css stylesheet */
+
+@font-face {
+    font-family: "SC_RobotoFont";
+    src: url('font/Roboto-Light.ttf') format("truetype");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+body{
+    font-family: 'SC_RobotoFont', cursive;    
+    font-size: 16px;
+}
+
+.audioRecorderTimeElapsed {
+    float: right;
+    font-family: sans-serif;
+    text-align: center;
+    width: 50px;
+    border-radius: 30px;
+    border: solid 2px #333;
+    padding: 10px;
+    margin: 0;
+    background: #337ab7;
+    color: #fff;
+}
+
+.audioRecorderRecordingControl {
+    padding-top: 10px;
+}
+
+.InlineBlock {
+    display: inline-block;
+}
+
+
+/* Matrix Reasoning*/
+
+.ImageSetContainer {
+    text-align: center;
+}
+
+.ImageSetContainer_Solution td:hover {
+    background: rgba(256, 0, 0, 0.4);
+}
+
+.ImageSetContainer_Solution td {
+    transition: background 300ms;
+}
+
+.ImageSetContainer_Solution td.PicSelected {
+    background: rgba(0, 256, 0, 0.4);
+}
+
+.ImageSetContainer_Solution td.PicSelected > img {
+    border-radius: 5px;
+}
+
+.MA_NextButton {
+    margin: 5px;
+}

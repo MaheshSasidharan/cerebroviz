@@ -1,0 +1,15 @@
+{
+  "name": "angular-ui-seed",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.2",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.5.8",
+    "angular-ui-router": "~0.2.14",
+    "webcam-directive": "latest",
+    "orbicular": "~3.0.0"
+  },
+  "resolutions": {
+    "angular": "~1.5.8"
+  }
+}

@@ -1,0 +1,15 @@
+<div>
+    <div class="row">
+        <form>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search Genes..." ng-model="vm.sSearchText">
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="submit" ng-click="vm.Helper.GetGene()">Go</button>
+                </span>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <cerebro val="vm.retrievedData"></cerebro>
+    </div>
+</div>
