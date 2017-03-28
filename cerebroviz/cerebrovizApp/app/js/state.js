@@ -5,7 +5,8 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         .state('cerebro.home', {
             url: '/home',
             templateUrl: 'templates/app/home.tpl.html',
-            controller: 'HomeCtrl as vm'
+            //templateUrl: 'templates/app/home.html',
+            controller: 'HomeCtrl as ge'
         })
         .state('cerebro.about', {
             url: '/about',

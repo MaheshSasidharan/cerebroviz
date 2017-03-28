@@ -1,9 +1,10 @@
-﻿app.factory('Factory_CommonRoutines', ['Notification', CommonRoutines])
+﻿app.factory('Factory_CommonRoutines', ['Notification', 'Factory_Constructors', CommonRoutines])
 
-function CommonRoutines(Notification) {
+function CommonRoutines(Notification, Constructors) {
 
     var oCommonRoutine = {
         Notification: Notification,
+        Constructors: Constructors,
         FindItemInArray: function(array, keyName, keyVal, returnType) {
             var found = false;
             if (undefined === keyVal || null === keyVal) {

@@ -100,8 +100,8 @@
             //This function "loads" the retrievedData, and parses it for the JSON and assigns it to var dataSet.
             var loadDataSet = function(retrievedData) {
                 if (retrievedData) {
-                    dataSet = JSON.parse(retrievedData[0].json)[0];
-                    geneID = retrievedData[0].gene_symbol;
+                    dataSet = retrievedData.json;
+                    geneID = retrievedData.gene_symbol;
                     // These variables are used to calculate the color scale. They are very standard d3 procedures. Must occur after dataSet is created.
                     merge = d3.merge(dataSet)
                     max = d3.round(d3.max(merge), 5)
@@ -234,7 +234,7 @@
 
             var currentTimePoint = 0; // This value will change when the range slider changes (eighter manually or via the play loop).
             //
-            var currentSet = dataSet ? dataSet[0] : null; // This holds the row of the dataSet which is currently being displayed in the brain regions.
+            var currentSet = dataSet ? dataSet : null; // This holds the row of the dataSet which is currently being displayed in the brain regions.
 
             //the function to update brain regions based on the HTML slider
             function updateRegions(timePoint) {

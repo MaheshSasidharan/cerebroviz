@@ -2,14 +2,38 @@
     <div class="row">
         <form>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search Genes..." ng-model="vm.sSearchText">
+                <input type="text" class="form-control" placeholder="Search Genes..." ng-model="ge.sSearchText">
                 <span class="input-group-btn">
-                    <button class="btn btn-danger" type="submit" ng-click="vm.Helper.GetGene()">Go</button>
+                    <button class="btn btn-danger" type="submit" ng-click="ge.Helper.GetGene()">Go</button>
                 </span>
             </div>
         </form>
     </div>
+    <hr />
     <div class="row">
-        <cerebro val="vm.retrievedData"></cerebro>
+        <div>
+            <div class="row">
+                <div class="GeneContainer">
+                    <div class="row ContainerBorder NoMarginRow ContainerTop">
+                        <div class="GeneSearchPool">
+                            <div ng-repeat="gene in ge.oGeneManager.GenesSearchPool.arrGenes" class="GeneBox" ng-click="ge.Helper.AddToGenesCalcPool(gene)">
+                                {{gene.gene_symbol}}</div>
+                        </div>
+                    </div>
+                    <div class="row NoMarginRow ContainerBottom" ng-if="ge.oGeneManager.GenesCalcPool.arrGenes.length">
+                        <div class="col-md-9 GeneCalcPool NoPaddingCol ContainerBorder">
+                            <div ng-repeat="gene in ge.oGeneManager.GenesCalcPool.arrGenes" class="GeneBox" ng-click="ge.Helper.RemoveGenesFromCalcPool(gene)">
+                                {{gene.gene_symbol}}</div>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1 GeneResult NoPaddingCol ContainerBorder">
+                            <div class="GeneBox" ng-if="ge.oGeneManager.oGeneToRender">{{ge.oGeneManager.oGeneToRender.gene_symbol}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" ng-if="ge.oGeneManager.oGeneToRender">
+                <cerebro val="ge.oGeneManager.oGeneToRender"></cerebro>
+            </div>
+        </div>
     </div>
 </div>
